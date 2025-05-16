@@ -1,0 +1,502 @@
+.boxshadowww {
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 15%);
+}
+
+/* header start */
+.header {
+  position: relative;
+  margin-top: 30px;
+}
+.h_wrapper {
+  background-image: url(../image/hed_backgroud.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* toggloar  */
+.nav_togle {
+  border: none !important;
+  padding: 0 !important;
+}
+.nav_togle a svg {
+  stroke: #fff;
+  fill: transparent;
+}
+.custom_toggler_icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+/* Hide initially */
+.nav .h_logos a::after {
+  transform: translateX(-50%) scaleX(0);
+  opacity: 0;
+}
+
+/* On hover or active only, show animation */
+.h_logos a:hover::after,
+.h_logos a.active::after {
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mainlogo {
+  display: none;
+}
+.secondt_li {
+  display: none;
+}
+.navbarr {
+  padding: 24px 32px;
+}
+.h_logos {
+  display: flex;
+  gap: 32px;
+}
+.h_logos a {
+  display: inline;
+}
+.nav {
+}
+.nav ul {
+}
+.nav ul li a {
+  padding: 0 !important;
+  margin-left: -61px;
+}
+
+/* ata ekside theke undersine start korche  */
+/* .h_logos a {
+    position: relative;
+    display: inline-block; 
+    padding-bottom: 24px; 
+  }
+  
+  .h_logos a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+    
+  }
+  
+  .h_logos a:hover::after,
+  .h_logos a.active::after {
+    width: 100%;
+  } */
+
+/* ata middle theke undersine start korche  */
+.h_logos a {
+  position: relative;
+  display: inline-block;
+}
+
+.h_logos a::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 50%; /* Start from center */
+  transform: translateX(-50%) scaleX(0); /* shrink from center */
+  transform-origin: center;
+  width: 100%;
+  height: 5px;
+  background-color: #8dd3bb;
+  transition: transform 0.3s ease;
+}
+
+.h_logos a:hover::after,
+.h_logos a.active::after {
+  transform: translateX(-50%) scaleX(1); /* expand to full width */
+}
+
+.h_buttons {
+  display: flex;
+  gap: 8px;
+}
+.h_buttons button {
+  background-color: #fff;
+  border: none !important;
+  border-radius: 8px !important;
+  color: #121;
+}
+.login {
+  color: var(--Neutrals, #fff) !important;
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: transparent !important;
+  padding: 0px 24px;
+  height: 48px;
+}
+
+/* .login:active{
+    background-color:#fff !important;
+    color: var(--Blackish-Green, #121);
+    transition: all 0.3s ease-in-out;
+  
+  } */
+.signup {
+  text-align: center;
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0px 24px;
+  height: 48px;
+}
+
+/* comon_allbtns animation */
+
+.comon_allbtns button {
+  position: relative;
+  overflow: hidden; /* Hide overflow animation */
+  z-index: 1;
+}
+.comon_allbtns button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0); /* Hide the background initially */
+  background: linear-gradient(0deg, #112211 0%, #112211 100%);
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for scale and opacity */
+  z-index: -1;
+  border-radius: 6px !important;
+}
+
+/* Hover Effect */
+.comon_allbtns button:hover::after {
+  transform: scale(1); /* Scale the background to full size */
+}
+
+.comon_allbtns button:hover {
+  color: #fff; /* Text color change on hover */
+}
+/* comon_allbtns animation */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* header start */
+  .mainlogo {
+    display: block;
+  }
+  .md_logos {
+    display: none;
+  }
+  .first_li {
+    display: none;
+  }
+  .secondt_li {
+    display: flex;
+  }
+
+  .h_buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .nav {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+  .secondt_li {
+    display: flex;
+    gap: 25px;
+  }
+  .nav ul {
+    margin: 0 !important;
+  }
+  .h_logos a::after {
+    bottom: -8px;
+    height: 4px;
+  }
+  .navbarr {
+    padding: 19px 0px;
+  }
+  .h_banner {
+    margin-top: 0px;
+  }
+  .h_banner h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+  .h_banner p {
+    font-size: 14px;
+    padding-bottom: 44px;
+  }
+  .h_wrapper {
+    background-image: url(../image/hed_backgroud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 304px;
+    border-radius: 9px;
+  }
+  .signup {
+    padding: 0px 20px;
+    height: 40px;
+  }
+  .login {
+    padding: 0px 20px;
+    height: 40px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-sm,
+  .container {
+    max-width: 568px;
+  }
+  /* header start */
+  .mainlogo {
+    display: block;
+  }
+  .md_logos {
+    display: none;
+  }
+  .first_li {
+    display: none;
+  }
+  .secondt_li {
+    display: flex;
+  }
+
+  .h_buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .nav {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+  .secondt_li {
+    display: flex;
+    gap: 35px;
+  }
+  .nav ul {
+    margin: 0 !important;
+  }
+  .h_logos a::after {
+    bottom: -13px;
+    height: 4px;
+  }
+  .navbarr {
+    padding: 19px 25px;
+  }
+  .h_banner {
+    margin-top: 0px;
+  }
+  .h_banner h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 40px;
+    margin-bottom: 6px;
+  }
+  .h_banner p {
+    font-size: 14px;
+    padding-bottom: 70px;
+  }
+  .h_wrapper {
+    background-image: url(../image/hed_backgroud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 357px;
+    border-radius: 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* header start */
+  .mainlogo {
+    display: block;
+  }
+  .md_logos {
+    display: none;
+  }
+  .first_li {
+    display: none;
+  }
+  .secondt_li {
+    display: flex;
+  }
+
+  .h_buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .nav {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+  .secondt_li {
+    display: flex;
+    gap: 35px;
+  }
+  .nav ul {
+    margin: 0 !important;
+  }
+  .h_logos a::after {
+    bottom: -13px;
+    height: 4px;
+  }
+  .navbarr {
+    padding: 19px 25px;
+  }
+  .h_banner {
+    margin-top: 0px;
+  }
+  .h_banner h1 {
+    font-size: 34px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 48px;
+    margin-bottom: 6px;
+  }
+  .h_banner p {
+    font-size: 16px;
+    padding-bottom: 70px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* header start */
+  .h_banner {
+    margin-top: 20px;
+  }
+  .h_banner h1 {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .h_banner p {
+    font-size: 18px;
+    padding-bottom: 113px;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* header start */
+  .h_banner {
+    margin-top: 40px;
+  }
+  .h_banner h1 {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .h_banner p {
+    font-size: 18px;
+    padding-bottom: 170px;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  .cus_container {
+    max-width: 1285px !important;
+  }
+
+  /* header start */
+  .h_banner {
+    margin-top: 40px;
+  }
+  .h_banner h1 {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .h_banner p {
+    font-size: 18px;
+    padding-bottom: 234px;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  .cus_container {
+    max-width: 1420px !important;
+  }
+  /* header start */
+  .h_banner {
+    margin-top: 40px;
+  }
+  .h_banner h1 {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .h_banner p {
+    font-size: 18px;
+    padding-bottom: 293px;
+  }
+}
+@media (min-width: 1701px) and (max-width: 1800px) {
+  .cus_container {
+    max-width: 1518px !important;
+  }
+  /* header start */
+
+  .h_banner p {
+    padding-bottom: 289px;
+  }
+}
+@media (min-width: 1801px) and (max-width: 1850px) {
+  .cus_container {
+    max-width: 1603px !important;
+  }
+
+  /* header start */
+
+  .h_banner p {
+    padding-bottom: 325px;
+  }
+}
+@media (min-width: 1851px) {
+  .cus_container {
+    max-width: 1735px !important;
+  }
+}

@@ -1,0 +1,1015 @@
+/* <!-- airbus start */
+
+.airbus {
+  margin-bottom: 120px;
+}
+
+.airbus_content {
+  margin-bottom: 64px;
+}
+
+.top_air {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 32px;
+}
+
+.air_left {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+.air_left h1 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/24px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 8px 0;
+}
+.air_left p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  align-content: center;
+}
+.views_options p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options button {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 40px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+}
+
+.air_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.air_right h2 {
+  color: var(--Slamon, #ff8682);
+
+  /* Montserrat/Bold/32px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.air_botn {
+  display: flex;
+  gap: 15px;
+}
+
+.heartbtn:hover {
+  background-color: #8dd3bb;
+}
+
+.heartbtn {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+  transition: 0.4s;
+}
+.heartbtn img {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+}
+
+.mybtn {
+  background-color: #8dd3bb !important;
+  border-radius: 4px;
+}
+
+/* Hover animation with image and text */
+.c_anim_btn {
+  height: 48px;
+  width: 150px;
+  overflow: hidden;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.canim_btn {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.canim_btn span {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c_anim_btn:hover .canim_btn {
+  transform: translateY(-48px);
+}
+
+/* --------------------------------------------------------- */
+.middle_air {
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 0 12px;
+}
+.middl_left {
+  background-color: #ebf6f2;
+  padding: 24px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.bottom_dat {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fromm {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+.fromm h2 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.fromm p {
+  color: var(--Blackish-Green, #121);
+  opacity: 60%;
+  /* Montserrat/Medium/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.middle_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 38px;
+  border-right: 2px solid #eaeaea;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.middle_center_top {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #8dd3bb;
+  padding: 24px;
+  border-top-right-radius: 16px;
+}
+
+.midle_ctopleft {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+}
+.midle_ctopleft img {
+  width: 48px;
+  height: 48px;
+}
+.midle_ctopleft h1 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/20px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 2px;
+}
+.midle_ctopleft p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Regular/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.middle_center_top h5 {
+  color: var(--Blackish-Green, #121);
+  text-align: right;
+
+  /* TradeGothic/Bold/14px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.middle_cencenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0 24px;
+}
+.mcen_contnt {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  align-content: center;
+}
+.mcen_contnt img {
+  width: 32px;
+  height: 32px;
+}
+.midcen_flex {
+}
+.midcen_flex h3 {
+  color: var(--Blackish-Green, #121);
+  opacity: 60%;
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.midcen_flex p {
+  color: var(--Blackish-Green, #121);
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.middle_center_bottom {
+  padding-left: 24px;
+  border-bottom-right-radius: 16px;
+}
+.midcen_posion {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.middle_center_bottom img {
+}
+.midcen_bottmleft h4 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/32px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.midcen_bottmleft p {
+  color: var(--Blackish-Green, #121);
+  opacity: 60%;
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.middl_right {
+  background-color: #fff;
+  border-radius: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.middl_right img {
+  width: 100%;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.terms h2 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.payment h3 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/20px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.payment p {
+  color: var(--Blackish-Green, #121);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  margin: 0;
+}
+
+.payment ul {
+  list-style-position: outside; /* বুলেট বাইরে থাকবে */
+  padding-left: 1.2em; /* বুলেটের দূরত্ব ঠিক রাখতে */
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .c_anim_btn {
+    height: 35px !important;
+  }
+  .canim_btn span {
+    height: 35px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-35px);
+  }
+  /* comon btn */
+  .comonbtn {
+    height: 35px;
+  }
+  .c_anim_btntwo {
+    height: 35px;
+  }
+
+  .canim_btntwo span {
+    height: 35px;
+  }
+  .c_anim_btntwo:hover .canim_btntwo {
+    transform: translateY(-35px);
+  }
+
+  .canim_btn span {
+    height: 35px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-35px);
+  }
+
+  /* <!-- airbus start --> */
+
+  .middle_cencenter {
+    display: flex;
+    padding: 0 0 0 24px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .middle_center {
+    gap: 10px;
+    border-right: none;
+  }
+  .middl_right img {
+    width: 82%;
+  }
+  .middle_center_top {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    background-color: #8dd3bb;
+    padding: 20px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .midle_ctopleft h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .midle_ctopleft {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .middle_center {
+    gap: 16px;
+  }
+  .mcen_contnt img {
+    width: 24px;
+    height: 24px;
+  }
+  .mcen_contnt {
+    gap: 8px;
+  }
+
+  .midcen_bottmleft h4 {
+    font-size: 24px;
+  }
+  .airbus_content {
+    margin-bottom: 40px;
+  }
+  .terms {
+    gap: 20px;
+  }
+
+  .air_right h2 {
+    font-size: 24px;
+  }
+  .middl_left {
+    display: none;
+    padding: 10px;
+  }
+
+  .midcen_posion {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .middle_center_bottom {
+    border-bottom: 1px solid #eaeaea;
+    border-radius: 16px;
+  }
+
+  .img_galary {
+    margin-bottom: 0;
+  }
+
+  .img_galary img {
+    display: none;
+    width: 44px;
+    height: 44px;
+  }
+  .airbus {
+    margin-bottom: 50px;
+  }
+
+  .top_air {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .airbus_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 20px 0 20px 0;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .policy_contnt p {
+    gap: 10px;
+  }
+  .policy_contnt {
+    gap: 10px;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  .air_policies {
+    margin-bottom: 30px;
+  }
+
+  .middle_dat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    margin: 20px 0 24px 0;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .fromm h2 {
+    font-size: 16px;
+  }
+  .fromm p {
+    font-size: 11px;
+  }
+  .fromm {
+    gap: 10px;
+  }
+
+  .bottom_dat {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .fjfdjs {
+    height: 40px;
+
+    margin: 0 16px;
+  }
+
+  .air_dates {
+    gap: 24px;
+  }
+
+  .heartbtn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .air_left h1 {
+    font-size: 20px;
+    margin: 0 0 0px 0;
+  }
+  .air_left p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .airbus_text h3 {
+    font-size: 20px;
+  }
+
+  .airline_check {
+    gap: 5px;
+  }
+  .airline_options {
+    gap: 11px;
+  }
+  .air_policies h4 {
+    font-size: 20px;
+  }
+  .policy_contnt p {
+    font-size: 14px;
+  }
+
+  .top_dat h5 {
+    font-size: 16px;
+  }
+  .top_dat p {
+    font-size: 16px;
+  }
+
+  .midle_left {
+    gap: 16px;
+    padding: 9px 16px;
+    width: 179px;
+  }
+
+  .midle_contnt h6 {
+    font-size: 16px;
+  }
+  .midle_contnt p {
+    font-size: 12px;
+  }
+
+  .sub_date {
+    padding: 20px 12px;
+  }
+
+  .air_right {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .canim_btn span {
+    height: 40px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-40px);
+  }
+  /* comon tittle end */
+
+  .canim_btn span {
+    height: 40px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-40px);
+  }
+
+  /* comon btn */
+  .comonbtn {
+    height: 40px;
+  }
+  .c_anim_btntwo {
+    height: 40px;
+  }
+
+  .canim_btntwo span {
+    height: 40px;
+  }
+  .c_anim_btntwo:hover .canim_btntwo {
+    transform: translateY(-40px);
+  }
+
+  /* <!-- airbus start --> */
+
+  .middle_cencenter {
+    display: flex;
+    padding: 0 0 0 24px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .middle_center {
+    gap: 10px;
+  }
+  .middl_right img {
+    width: 82%;
+  }
+  .middle_center_top {
+    padding: 20px;
+  }
+  .midle_ctopleft h1 {
+    font-size: 18px;
+  }
+  .midle_ctopleft {
+    gap: 10px;
+  }
+  .middle_center {
+    gap: 11px;
+  }
+  .mcen_contnt img {
+    width: 24px;
+    height: 24px;
+  }
+  .mcen_contnt {
+    gap: 8px;
+  }
+
+  .midcen_bottmleft h4 {
+    font-size: 24px;
+  }
+  .airbus_content {
+    margin-bottom: 50px;
+  }
+  .terms {
+    gap: 24px;
+  }
+
+  .air_right h2 {
+    font-size: 24px;
+  }
+
+  .airbus {
+    margin-bottom: 60px;
+  }
+  .top_air {
+    margin-bottom: 24px;
+    align-items: flex-end;
+    align-content: center;
+  }
+
+  .airbus_text {
+    margin: 30px 0 20px 0;
+  }
+  .img_galary {
+    margin-bottom: 30px;
+  }
+  .policy_contnt p {
+    gap: 10px;
+  }
+  .policy_contnt {
+    gap: 10px;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  .air_policies {
+    margin-bottom: 30px;
+  }
+  .middle_dat {
+    margin: 16px 0 24px 0;
+  }
+
+  .fromm h2 {
+    font-size: 20px;
+  }
+  .fromm p {
+    font-size: 11px;
+  }
+  .fromm {
+    gap: 10px;
+  }
+  .bottom_dat {
+    gap: 20px;
+  }
+  .fjfdjs {
+    height: 40px;
+
+    margin: 0 16px;
+  }
+
+  .air_dates {
+    gap: 30px;
+  }
+
+  .heartbtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .air_left h1 {
+    font-size: 20px;
+    margin: 0 0 0px 0;
+  }
+  .air_left p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .airbus_text h3 {
+    font-size: 20px;
+  }
+
+  .airline_check {
+    gap: 5px;
+  }
+  .airline_options {
+    gap: 11px;
+  }
+  .air_policies h4 {
+    font-size: 20px;
+  }
+  .policy_contnt p {
+    font-size: 14px;
+  }
+
+  .top_dat h5 {
+    font-size: 16px;
+  }
+  .top_dat p {
+    font-size: 16px;
+  }
+
+  .midle_left {
+    gap: 16px;
+    padding: 9px 16px;
+    width: 179px;
+  }
+
+  .midle_contnt h6 {
+    font-size: 16px;
+  }
+  .midle_contnt p {
+    font-size: 12px;
+  }
+
+  .sub_date {
+    padding: 20px 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* <!-- airbus start --> */
+
+  .middle_cencenter {
+    display: flex;
+    padding: 0 162px 0 24px;
+    flex-wrap: wrap;
+    gap: 41px;
+    justify-content: flex-start;
+  }
+
+  .middle_center {
+    gap: 10px;
+  }
+  .middl_right img {
+    width: 82%;
+  }
+
+  .img_galary img {
+    width: 58px;
+    height: 58px;
+  }
+  .airbus {
+    margin-bottom: 80px;
+  }
+  .top_air {
+    margin-bottom: 24px;
+  }
+
+  .airbus_text {
+    margin: 30px 0 20px 0;
+  }
+  .img_galary {
+    margin-bottom: 30px;
+  }
+  .policy_contnt p {
+    gap: 10px;
+  }
+  .policy_contnt {
+    gap: 10px;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  .air_policies {
+    margin-bottom: 30px;
+  }
+  .middle_dat {
+    margin: 20px 0 30px 0;
+  }
+  .fromm h2 {
+    font-size: 25px;
+  }
+  .fromm {
+    gap: 10px;
+  }
+  .bottom_dat {
+    gap: 35px;
+  }
+  .fjfdjs {
+    height: 40px;
+
+    margin: 0 20px;
+  }
+
+  .air_dates {
+    gap: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* <!-- airbus start --> */
+  .airbus {
+    margin-bottom: 100px;
+  }
+
+  .middle_cencenter {
+    display: flex;
+    padding: 0 162px 0 24px;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .middle_center {
+    gap: 10px;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  /* <!-- airbus start --> */
+  .middle_cencenter {
+    padding: 0 109px 0 24px;
+  }
+  .midcen_posion {
+    flex-direction: row;
+  }
+}
+@media (min-width: 400px) and (max-width: 450px) {
+}
+
+@media (min-width: 500px) and (max-width: 575px) {
+  /* <!-- airbus start --> */
+  .middle_cencenter {
+    padding: 0 165px 0 24px;
+  }
+}

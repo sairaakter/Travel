@@ -1,0 +1,197 @@
+.log_first {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.log_second {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+.e_pos {
+  position: absolute;
+  top: -6px;
+  left: 19px;
+  background-color: #fafbfc;
+  padding: 0 10px;
+  z-index: 10;
+  color: #1c1b1f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.e_pos {
+  position: absolute;
+  top: -6px;
+  left: 19px;
+  background-color: #fafbfc;
+  padding: 0 10px;
+  z-index: 10;
+  color: #1c1b1f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.password_input_wrapper {
+  position: relative; /* আইকনটিকে অ্যাবসোলিউটলি পজিশন করার জন্য */
+  width: 100%; /* ইনপুট ফিল্ডের পুরো প্রস্থ নেবে */
+}
+
+.log_sign {
+  padding-right: 30px; /* আইকনের জন্য ডানদিকে জায়গা তৈরি করুন */
+  width: 100%; /* আপনার প্রয়োজন অনুযায়ী */
+  /* অন্যান্য স্টাইল */
+}
+
+.log_sign {
+  height: 48px;
+  font-size: 14px;
+}
+.log_sign::placeholder {
+  font-size: 14px;
+}
+
+.log_sign {
+  color: #1c1b1f;
+
+  /* Montserrat/Regular/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #79747e;
+  outline: none;
+  background-color: transparent;
+  height: 66px;
+  width: 100%;
+  padding: 0 0 0 16px;
+  border-radius: 4px;
+}
+.log_sign::placeholder {
+  color: #1c1b1f;
+
+  /* Montserrat/Regular/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+
+  border: none;
+  outline: none;
+}
+.log_sign:focus-visible {
+  border: 1px solid #79747e;
+  outline: none !important;
+}
+
+.log_sign {
+  padding-right: 30px; /* আইকনের জন্য ডানদিকে জায়গা তৈরি করুন */
+  width: 100%; /* আপনার প্রয়োজন অনুযায়ী */
+  /* অন্যান্য স্টাইল */
+}
+
+.first_pos {
+  position: relative;
+}
+
+.password_toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777; /* আইকনের রঙ */
+  z-index: 11; /* .e_pos এর উপরে দেখানোর জন্য */
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .log_sign {
+    height: 48px;
+    font-size: 14px;
+  }
+  .log_sign::placeholder {
+    font-size: 14px;
+  }
+  .password_toggle {
+    width: 20px;
+    height: 20px;
+  }
+  .e_pos {
+    padding: 0 7px;
+    font-size: 12px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 48px;
+    font-size: 14px;
+  }
+  .log_sign::placeholder {
+    font-size: 14px;
+  }
+  .password_toggle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .e_pos {
+    padding: 0 7px;
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 56px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 56px;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 56px;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  /* <!-- airbus start --> */
+
+  .log_sign {
+    height: 56px;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 56px;
+  }
+}

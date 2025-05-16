@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(../font/Montserrat/static/Montserrat-SemiBold.ttf);
+  src: url(../font/Montserrat/static/Montserrat-Regular.ttf);
+  src: url(../font/Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "TradeGothic LT Extended", sans-serif;
+  src: url(../font/tradegothic-lt-extended-bold/static/TradeGothic\ LT\ Extended\ Bold.ttf);
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: #fafbfc;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+/* header start */
+.header {
+  position: relative;
+  margin-top: 30px;
+}
+.h_wrapper {
+  background-image: url(../assets/hed_backgroud.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav_colpss {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  height: 0;
+}
+
+.nav_colpss.show {
+  height: auto;
+}
+
+.nav_colpss.collapsing {
+  height: 0;
+}
+
+/* বড় স্ক্রিনের জন্য স্টাইল */
+@media (min-width: 992px) {
+  /* lg ব্রেকপয়েন্ট */
+  .nav_colpss {
+    height: auto;
+    overflow: visible;
+    display: block !important; /*Bootstrap এর সাথে কনফ্লিক্ট এড়ানোর জন্য */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .h_wrapper {
+    background-image: url(../assets/hed_backgroud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 304px;
+    border-radius: 9px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-sm,
+  .container {
+    max-width: 568px;
+  }
+
+  .h_wrapper {
+    background-image: url(../assets/hed_backgroud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 357px;
+    border-radius: 15px;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  .cus_container {
+    max-width: 1285px !important;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  .cus_container {
+    max-width: 1420px !important;
+  }
+}
+@media (min-width: 1701px) and (max-width: 1800px) {
+  .cus_container {
+    max-width: 1518px !important;
+  }
+}
+@media (min-width: 1801px) and (max-width: 1850px) {
+  .cus_container {
+    max-width: 1603px !important;
+  }
+}
+@media (min-width: 1851px) {
+  .cus_container {
+    max-width: 1735px !important;
+  }
+}

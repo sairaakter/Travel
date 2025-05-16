@@ -1,0 +1,221 @@
+/* hbanner start */
+.h_banner {
+  margin-top: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.h_banner h1 {
+  color: var(--Neutrals, #fff);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.h_banner h2 {
+  color: var(--Neutrals, #fff);
+  text-align: center;
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.h_banner p {
+  color: var(--Neutrals, #fff);
+  text-align: center;
+  /* Montserrat/Semibold/20px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+
+  font-weight: 600;
+  line-height: auto;
+  padding-bottom: 382px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* header start */
+
+  .h_banner {
+    margin-top: 0px;
+  }
+  .h_banner h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+  .h_banner p {
+    font-size: 14px;
+    padding-bottom: 44px;
+  }
+  .h_wrapper {
+    background-image: url(../image/hed_backgroud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 304px;
+    border-radius: 9px;
+  }
+  .signup {
+    padding: 0px 20px;
+    height: 40px;
+  }
+  .login {
+    padding: 0px 20px;
+    height: 40px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-sm,
+  .container {
+    max-width: 568px;
+  }
+  .h_banner {
+    margin-top: 0px;
+  }
+  .h_banner h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 40px;
+    margin-bottom: 6px;
+  }
+  .h_banner p {
+    font-size: 14px;
+    padding-bottom: 70px;
+  }
+  .h_wrapper {
+    background-image: url(../image/hed_backgroud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 357px;
+    border-radius: 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* header start */
+
+  .h_banner {
+    margin-top: 0px;
+  }
+  .h_banner h1 {
+    font-size: 34px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 48px;
+    margin-bottom: 6px;
+  }
+  .h_banner p {
+    font-size: 16px;
+    padding-bottom: 70px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* header start */
+  .h_banner {
+    margin-top: 20px;
+  }
+  .h_banner h1 {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .h_banner p {
+    font-size: 18px;
+    padding-bottom: 113px;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* header start */
+  .h_banner {
+    margin-top: 40px;
+  }
+  .h_banner h1 {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .h_banner p {
+    font-size: 18px;
+    padding-bottom: 170px;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  /* header start */
+  .h_banner {
+    margin-top: 40px;
+  }
+  .h_banner h1 {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .h_banner p {
+    font-size: 18px;
+    padding-bottom: 234px;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  /* header start */
+  .h_banner {
+    margin-top: 40px;
+  }
+  .h_banner h1 {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .h_banner h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .h_banner p {
+    font-size: 18px;
+    padding-bottom: 293px;
+  }
+}
+@media (min-width: 1701px) and (max-width: 1800px) {
+  /* header start */
+
+  .h_banner p {
+    padding-bottom: 289px;
+  }
+}
+@media (min-width: 1801px) and (max-width: 1850px) {
+  /* header start */
+
+  .h_banner p {
+    padding-bottom: 325px;
+  }
+}

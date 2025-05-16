@@ -1,0 +1,23 @@
+/* comonbtn start */
+.comonbtn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 16px;
+  border: none;
+  background-color: transparent;
+}
+/* comonbtn end */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .comonbtn {
+    height: 40px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .comonbtn {
+    height: 40px;
+  }
+}

@@ -1,0 +1,775 @@
+.hotel_info {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 0;
+  margin: 0 0 0 0;
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 15%);
+  border-radius: 12px;
+}
+
+.algncentr {
+  padding: 0 !important;
+}
+.hotel_info img {
+  width: 100%;
+  height: 100%;
+}
+
+.views {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.views_options {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  align-content: center;
+}
+.views_options p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options button {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 40px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+}
+
+.startin_form {
+}
+
+.startin_form p {
+  color: var(--Blackish-Green, #121);
+  opacity: 75%;
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.startin_form h3 {
+  color: var(--Slamon, #ff8682);
+  text-align: right;
+
+  /* Montserrat/Bold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+.startin_form h4 {
+  color: var(--Slamon, #112211);
+  text-align: right;
+  opacity: 75%;
+  /* Montserrat/Bold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+/* bokin_time */
+.bokin_options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bokin_check {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+}
+.bokin_checkinput {
+}
+.bokin_checklabel {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+}
+.bokin_check input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  accent-color: #262626; /* Custom color */
+  cursor: pointer;
+  border: 2px solid rgba(17, 34, 17, 30%);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  display: block !important;
+}
+
+.bokin_check input[type="checkbox"]:checked {
+  background-color: transparent;
+  background-image: url("../image/check_solid.svg"); /* Your custom checkmark image */
+  background-size: 10px 10px; /* Ensures the image fits the checkbox */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bokin_check input[type="checkbox"]::before {
+  content: ""; /* Checkmark symbol */
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide by default */
+}
+/* Show tick mark when checked */
+.bokin_check input[type="checkbox"]:checked::before {
+  display: block;
+}
+
+.bokin_checklabel {
+  display: flex;
+  gap: 40px;
+}
+.bokin_checklabel p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.bokin_options hr {
+  opacity: 0.25;
+  background: var(--Blackish-Green, #121);
+  margin: 0;
+}
+
+.tofor_mor {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: #ff8682;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.bokin_btn {
+  display: flex;
+  gap: 20px;
+}
+.heartbtn:hover {
+  background-color: #8dd3bb;
+}
+
+.heartbtn {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+  transition: 0.4s;
+}
+.heartbtn img {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+}
+
+.mybtn {
+  background-color: #8dd3bb !important;
+  border-radius: 4px;
+}
+
+/* Hover animation with image and text */
+.c--anim-btn {
+  height: 48px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.c-anim-btn {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.c-anim-btn span {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c--anim-btn:hover .c-anim-btn {
+  transform: translateY(-48px);
+}
+
+.Show_more {
+  background-color: #112211 !important;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+.Show_more span {
+  color: var(--Neutrals, #fff);
+
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.air_left {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+.air_left h1 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/24px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+.air_left p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  align-content: center;
+}
+.views_options p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options button {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 40px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+}
+
+.air_left img {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.algncentrtwo {
+  padding: 24px;
+}
+.star_hotel {
+  display: flex;
+  gap: 52px;
+  align-items: center;
+  align-content: center;
+}
+.star_left {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  align-content: center;
+}
+
+.star_img {
+}
+.star_img img {
+}
+
+.start_cont {
+}
+.start_cont p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.star_right {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  align-content: center;
+}
+.star_right img {
+}
+.star_right p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Bold/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* filterin system */
+
+  .promo_btn a {
+    margin-right: 0;
+  }
+
+  .promo_btn .animation {
+    bottom: 0 !important;
+  }
+  .promo_btn {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 30px;
+  }
+  .bokin_checklabel {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .bokin_check {
+    align-items: flex-start;
+    align-content: center;
+    gap: 15px;
+  }
+  .fjfdjs {
+    display: none;
+  }
+  .promo_btn a img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rating_options {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .algncentr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .hotel_info img {
+    width: 100%;
+    /* transform: rotate(90deg); */
+    border-radius: 16px;
+  }
+  .heartbtn {
+    width: 40px;
+    height: 35px;
+  }
+  .promo_btn {
+    margin-bottom: 0 !important;
+  }
+
+  .fil_left {
+    border-right: none;
+    padding-right: 12px;
+  }
+
+  .filtering {
+    padding: 32px 0 120px 0;
+    overflow-x: hidden;
+  }
+
+  .recomended {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-content: flex-start;
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  .promo_btn .animation {
+    bottom: 0 !important;
+    display: none;
+  }
+
+  .hotel_info {
+    align-items: stretch;
+    padding: 24px;
+  }
+
+  .algncentrtwo {
+    padding: 20px 0 0;
+  }
+
+  .air_left {
+    gap: 10px;
+  }
+
+  .views {
+    margin-bottom: 10px;
+  }
+  .bokin_options {
+    gap: 10px;
+  }
+
+  .star_hotel {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+
+  .air_left h1 {
+    font-size: 16px;
+  }
+  .startin_form h3 {
+    font-size: 16px;
+  }
+
+  .ddj {
+    display: flex;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* filterin system */
+
+  .promo_btn a {
+    margin-right: 0;
+  }
+
+  .promo_btn .animation {
+    bottom: 0 !important;
+  }
+  .promo_btn {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 30px;
+  }
+  .bokin_checklabel {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .bokin_check {
+    align-items: flex-start;
+    align-content: center;
+    gap: 15px;
+  }
+  .fjfdjs {
+    display: none;
+  }
+  .promo_btn a img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rating_options {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .algncentr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .hotel_info img {
+    width: 100%;
+    /* transform: rotate(90deg); */
+    border-radius: 16px;
+  }
+  .heartbtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hotel_info {
+    align-items: stretch;
+  }
+
+  .algncentrtwo {
+    padding: 13px;
+  }
+
+  .air_left {
+    gap: 10px;
+  }
+
+  .views {
+    margin-bottom: 10px;
+  }
+  .bokin_options {
+    gap: 10px;
+  }
+
+  .star_hotel {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+
+  .air_left h1 {
+    font-size: 18px;
+  }
+  .startin_form h3 {
+    font-size: 18px;
+  }
+
+  .ddj {
+    display: flex;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* filterin system */
+
+  .hotel_info img {
+    width: 100%;
+    height: 100%;
+  }
+  .promo_btn a {
+    margin-right: 0;
+  }
+
+  .promo_btn .animation {
+    bottom: 0 !important;
+  }
+  .promo_btn {
+    padding: 12px 8px;
+  }
+  .bokin_checklabel {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .bokin_check {
+    align-items: flex-start;
+    align-content: center;
+    gap: 15px;
+  }
+
+  .hotel_info {
+    align-items: stretch;
+  }
+
+  .algncentrtwo {
+    padding: 13px;
+  }
+
+  .air_left {
+    gap: 10px;
+  }
+
+  .views {
+    margin-bottom: 10px;
+  }
+  .bokin_options {
+    gap: 10px;
+  }
+
+  .star_hotel {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+
+  .air_left h1 {
+    font-size: 18px;
+  }
+  .startin_form h3 {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* filterin system */
+
+  .hotel_info img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hotel_info {
+    align-items: stretch;
+  }
+
+  .algncentrtwo {
+    padding: 13px;
+  }
+
+  .air_left {
+    gap: 10px;
+  }
+
+  .views {
+    margin-bottom: 10px;
+  }
+  .bokin_options {
+    gap: 10px;
+  }
+
+  .star_hotel {
+    gap: 29px;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* filterin system */
+
+  .hotel_info img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hotel_info {
+    align-items: stretch;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  /* filterin system */
+
+  .hotel_info img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hotel_info {
+    align-items: stretch;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  /* filterin system */
+
+  .hotel_info img {
+    width: 100%;
+    height: 100%;
+  }
+  .hotel_info {
+    align-items: stretch;
+  }
+}
+@media (min-width: 1701px) and (max-width: 1800px) {
+  /* filterin system */
+
+  .hotel_info img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1801px) and (max-width: 1850px) {
+  /* filterin system */
+
+  .hotel_info img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,999 @@
+/* <!-- airbus start */
+
+.airbus {
+  margin-bottom: 120px;
+}
+
+.airbus_content {
+}
+
+.top_air {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 32px;
+}
+
+.air_left {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+.air_left h1 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/24px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 8px 0;
+}
+.air_left p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  align-content: center;
+}
+.views_options p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options button {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 40px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+}
+
+.air_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.air_right h2 {
+  color: var(--Slamon, #ff8682);
+
+  /* Montserrat/Bold/32px */
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.air_botn {
+  display: flex;
+  gap: 15px;
+}
+
+.heartbtn:hover {
+  background-color: #8dd3bb;
+}
+
+.heartbtn {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+  transition: 0.4s;
+}
+.heartbtn img {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+}
+
+.mybtn {
+  background-color: #8dd3bb !important;
+  border-radius: 4px;
+}
+
+/* Hover animation with image and text */
+.c_anim_btn {
+  height: 48px;
+  width: 150px;
+  overflow: hidden;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.canim_btn {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.canim_btn span {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c_anim_btn:hover .canim_btn {
+  transform: translateY(-48px);
+}
+
+/* <!-- airbus start --> */
+
+/* fall start */
+
+.fall {
+  margin-bottom: 64px;
+}
+
+.fall_left {
+  border-radius: 20px;
+  padding: 24px;
+  height: 100%;
+}
+.fall_tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.fall_tittle h1 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/40px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+.from {
+  background-color: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 10px;
+}
+.from h4 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Regular/14px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.from p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/20px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 !important;
+}
+
+.fall_left p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Regular/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  margin: 24px 0 354px 0;
+}
+
+/* comonbtn start */
+.comonbtn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 16px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fall_btns button {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Hover animation with image and text */
+.c_anim_btntwo {
+  height: 48px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.canim_btntwo {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.canim_btntwo span {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c_anim_btntwo:hover .canim_btntwo {
+  transform: translateY(-48px);
+}
+
+/* fall_right */
+
+.fall_right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fall_one {
+  display: flex;
+  justify-content: space-between;
+}
+.fall_one img {
+  width: 49%;
+  height: 49%;
+}
+
+.fa_left img {
+  width: 100%;
+  height: 100%;
+}
+
+.comonhr {
+  opacity: 0.25;
+  background: var(--Blackish-Green, #121);
+  margin: 0;
+}
+
+/* <!-- detailtwo content --> */
+
+.detailtwo_con {
+}
+
+.detai_top h2 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/20px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+.detai_top P {
+  color: var(--Blackish-Green, #121);
+  opacity: 75%;
+  /* Montserrat/Medium/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: auto;
+  margin: 16px 0 32px 0;
+}
+.detai_botom {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  align-content: center;
+}
+.subdera {
+  width: 166px;
+  height: 145px;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #8dd3bb;
+  transition: all 0.3s ease-in-out;
+}
+.subdera:hover {
+  background-color: #8dd3bb;
+}
+.subdera {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 33px;
+}
+.subdera h3 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/32px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.subdera p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* room available */
+
+.room_avialbe {
+}
+.room_avialbe h3 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/20px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 32px 0;
+}
+
+.room_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 16px 0;
+}
+
+.room_left {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+}
+.room_left img {
+}
+.room_left p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.room_right {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 64px;
+}
+
+.room_right h2 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+/* location start */
+.locat_map {
+}
+
+.locat_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 32px;
+}
+.locat_top h3 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/20px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 !important;
+}
+.locat_top button {
+  width: auto !important;
+}
+
+.iframe {
+  border-radius: 16px;
+  width: 100%;
+}
+
+/* <!-- Amenities start */
+
+.Amenities {
+  margin: 64px 0;
+}
+.comon_htrhee {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/20px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.Amenities_left {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+}
+.Amenities_left_one {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+}
+.Amenities_left_one img {
+}
+.Amenities_left_one p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.Amenities_topupp {
+  display: flex;
+  gap: 300px;
+}
+
+.tofor_mor {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: #ff8682;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+/* revew start */
+
+.revew {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-content: center;
+  margin-bottom: 24px;
+}
+.revew h2 {
+  color: var(--Blackish-Green, #121);
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+.revew h3 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/20px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.revew p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Regular/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.review_botom {
+}
+
+.sub_rev {
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.left_rev {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+}
+.left_rev img {
+}
+.left_rev p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Regular/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+  width: 93%;
+}
+
+.right_rev {
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+.pagination span {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Regular/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .c_anim_btn {
+    height: 35px;
+  }
+  /* comon btn */
+  .comonbtn {
+    height: 35px;
+  }
+  .c_anim_btntwo {
+    height: 35px;
+  }
+
+  .canim_btntwo span {
+    height: 35px;
+  }
+  .c_anim_btntwo:hover .canim_btntwo {
+    transform: translateY(-35px);
+  }
+
+  .canim_btn span {
+    height: 35px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-35px);
+  }
+
+  /* <!-- airbus start --> */
+
+  .airbus {
+    margin-bottom: 50px;
+  }
+
+  .top_air {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .heartbtn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .air_left h1 {
+    font-size: 20px;
+    margin: 0 0 0px 0;
+  }
+  .air_left p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .air_right {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+
+  .fa_left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    margin-bottom: 10px;
+  }
+  .fall_right {
+    gap: 6px;
+  }
+  .fall_one img {
+    border-radius: 9px;
+  }
+
+  .fall {
+    margin-bottom: 50px;
+  }
+
+  .Amenities {
+    margin: 40px 0;
+  }
+
+  .comon_htrhee {
+    margin-bottom: 20px !important;
+  }
+  .subdera {
+    gap: 13px;
+    width: 100%;
+    height: 110px;
+
+    flex-direction: column;
+
+    align-content: center;
+    align-items: center;
+  }
+
+  .room_right h2 {
+    font-size: 20px;
+  }
+
+  .room_right {
+    gap: 21px;
+  }
+  .Amenities_topupp {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .subdera h3 {
+    font-size: 26px;
+  }
+  .sub_rev {
+    margin: 20px 0;
+  }
+
+  .revew {
+    gap: 10px;
+  }
+  .revew h2 {
+    font-size: 40px;
+  }
+  .revew h3 {
+    font-size: 17px;
+  }
+  .revew p {
+    font-size: 12px;
+  }
+  .pagination {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .detai_botom {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+
+  .room_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 16px 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .room_right {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    gap: 16px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .locat_top {
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .c_anim_btn {
+    height: 40px;
+  }
+  /* comon tittle end */
+
+  .canim_btn span {
+    height: 40px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-40px);
+  }
+
+  /* comon btn */
+  .comonbtn {
+    height: 40px;
+  }
+  .c_anim_btntwo {
+    height: 40px;
+  }
+
+  .canim_btntwo span {
+    height: 40px;
+  }
+  .c_anim_btntwo:hover .canim_btntwo {
+    transform: translateY(-40px);
+  }
+
+  /* <!-- airbus start --> */
+
+  .airbus {
+    margin-bottom: 60px;
+  }
+  .top_air {
+    margin-bottom: 24px;
+    align-items: flex-end;
+    align-content: center;
+  }
+
+  .heartbtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .air_left h1 {
+    font-size: 20px;
+    margin: 0 0 0px 0;
+  }
+  .air_left p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .fall {
+    margin-bottom: 50px;
+  }
+
+  .fall_one img {
+    width: 46%;
+    height: 49%;
+  }
+
+  .Amenities {
+    margin: 40px 0;
+  }
+
+  .comon_htrhee {
+    margin-bottom: 20px !important;
+  }
+  .subdera {
+    gap: 15px;
+    width: 100%;
+    height: 120px;
+  }
+
+  .room_right h2 {
+    font-size: 20px;
+  }
+
+  .room_right {
+    gap: 21px;
+  }
+  .Amenities_topupp {
+    gap: 160px;
+  }
+  .subdera h3 {
+    font-size: 26px;
+  }
+  .sub_rev {
+    margin: 20px 0;
+  }
+
+  .revew {
+    gap: 10px;
+  }
+  .revew h2 {
+    font-size: 40px;
+  }
+  .revew h3 {
+    font-size: 17px;
+  }
+  .revew p {
+    font-size: 12px;
+  }
+  .pagination {
+    gap: 12px;
+    margin-top: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* <!-- airbus start --> */
+  .airbus {
+    margin-bottom: 80px;
+  }
+  .top_air {
+    margin-bottom: 24px;
+  }
+
+  .fall_one img {
+    width: 46%;
+    height: 49%;
+  }
+
+  .Amenities {
+    margin: 50px 0;
+  }
+
+  .comon_htrhee {
+    margin-bottom: 20px !important;
+  }
+  .subdera {
+    gap: 15px;
+    width: 100%;
+    height: 120px;
+  }
+
+  .room_right h2 {
+    font-size: 20px;
+  }
+
+  .room_right {
+    gap: 21px;
+  }
+  .Amenities_topupp {
+    gap: 160px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* <!-- airbus start --> */
+  .airbus {
+    margin-bottom: 100px;
+  }
+
+  .fall_one img {
+    width: 48%;
+  }
+
+  .Amenities {
+    margin: 55px 0;
+  }
+  .comon_htrhee {
+    margin-bottom: 20px !important;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 85px;
+    height: 85px;
+  }
+  .fall_one img {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1551px) and (max-width: 1700px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 100px;
+    height: 100px;
+  }
+}

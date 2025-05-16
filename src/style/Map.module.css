@@ -1,0 +1,170 @@
+.map_section {
+  background-color: #8dd3bb;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.map_wrapper {
+  width: 100%;
+}
+
+.world_map {
+  width: 100%;
+  /* Ensure the image takes up full height */
+  display: block;
+}
+
+.card {
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card_contnt {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+}
+.card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+.card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.card h3 {
+  margin: 0;
+  color: var(--Blackish-Green, #121);
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card p {
+  color: var(--Blackish-Green, #121);
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.arrow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+/* Adjust positions with specific classes for each card */
+.card.first {
+  top: 25%; /* 25% from the top of the map_wrapper */
+  left: 30%;
+}
+
+.card.second {
+  top: 60%; /* 60% from the top of the map_wrapper */
+  left: 50%;
+}
+.card.third {
+  top: 30%; /* 60% from the top of the map_wrapper */
+  left: 70%;
+}
+.card.forth {
+  top: 69%; /* 60% from the top of the map_wrapper */
+  left: 80%;
+}
+.card.fifth {
+  top: 40%; /* 60% from the top of the map_wrapper */
+  left: 10%;
+}
+
+.arrow {
+  width: 68px;
+  height: 40px;
+  top: 100%;
+  left: 42%;
+  transform: rotate(353deg);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* user map start */
+  .map_section {
+    margin-bottom: 60px;
+  }
+  .card img {
+    display: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+  }
+
+  .arrow {
+    width: 46px;
+    height: 29px;
+    top: 109%;
+    left: 42%;
+    transform: rotate(353deg);
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* user map start */
+  .map_section {
+    margin-bottom: 60px;
+  }
+  .card img {
+    display: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+  }
+
+  .arrow {
+    width: 46px;
+    height: 29px;
+    top: 109%;
+    left: 42%;
+    transform: rotate(353deg);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* user map start */
+  .map_section {
+    margin-bottom: 65px;
+  }
+  .card img {
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+  }
+
+  .arrow {
+    width: 46px;
+    height: 29px;
+    top: 109%;
+    left: 42%;
+    transform: rotate(353deg);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* user map start */
+  .map_section {
+    margin-bottom: 65px;
+  }
+}

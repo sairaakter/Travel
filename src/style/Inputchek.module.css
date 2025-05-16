@@ -1,0 +1,52 @@
+.airline_check {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.airline_checkinput {
+}
+.airline_checklabel {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+}
+.airline_check input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  accent-color: #262626; /* Custom color */
+  cursor: pointer;
+  border: 2px solid #112211;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  display: block !important;
+}
+
+.airline_check input[type="checkbox"]:checked {
+  background-color: transparent;
+  background-image: url("../assets/check_solid.svg"); /* Your custom checkmark image */
+  background-size: 10px 10px; /* Ensures the image fits the checkbox */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.airline_check input[type="checkbox"]::before {
+  content: ""; /* Checkmark symbol */
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide by default */
+}
+/* Show tick mark when checked */
+.airline_check input[type="checkbox"]:checked::before {
+  display: block;
+}

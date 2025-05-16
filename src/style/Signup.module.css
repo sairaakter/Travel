@@ -1,0 +1,740 @@
+/* <!-- airbus start --------------------------*/
+
+.airbus {
+  margin: 104px 0;
+}
+
+.airbus_content {
+}
+
+/* Hover animation with image and text */
+.c--anim-btn {
+  height: 48px;
+  width: 150px;
+  overflow: hidden;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.c-anim-btn {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.c-anim-btn span {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c--anim-btn:hover .c-anim-btn {
+  transform: translateY(-48px);
+}
+
+/* <!-- airbus start --> */
+
+.air_dates {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.log_book {
+}
+.log_book h2 {
+  color: #000;
+
+  /* TradeGothic/Bold/40px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.log_book h3 {
+  color: var(--Blackish-Green, #121);
+  opacity: 75%;
+  /* Montserrat/Regular/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+
+.log_adress {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.log_first {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.log_second {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.check_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+.log_signbtn {
+  width: 100%;
+}
+.log_signbtn button {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.log_sign {
+  color: #1c1b1f;
+
+  /* Montserrat/Regular/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #79747e;
+  outline: none;
+  background-color: transparent;
+  height: 66px;
+  width: 100%;
+  padding: 0 0 0 16px;
+  border-radius: 4px;
+}
+.log_sign::placeholder {
+  color: #1c1b1f;
+
+  /* Montserrat/Regular/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+
+  border: none;
+  outline: none;
+}
+.log_sign:focus-visible {
+  border: 1px solid #79747e;
+  outline: none !important;
+}
+
+.log_signbtn button {
+  color: var(--Neutrals, #112211);
+  font-weight: 500;
+  background-color: #8dd3bb;
+  z-index: 1;
+  height: 56px;
+  font-size: 16px !important;
+}
+
+/* comonbtn start */
+.comonbtn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 16px;
+  border: none;
+  background-color: transparent;
+}
+/* comonbtn end */
+/* comon_allbtns animation */
+
+.log_signbtn button {
+  font-weight: 600 !important;
+  position: relative;
+  overflow: hidden !important; /* Hide overflow animation */
+  z-index: 1;
+  border-radius: 4px;
+}
+.log_signbtn button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0); /* Hide the background initially */
+  background: linear-gradient(0deg, #112211 0%, #112211 100%);
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for scale and opacity */
+  z-index: -1;
+  border-radius: initial;
+}
+
+/* Hover Effect */
+.log_signbtn button:hover::after {
+  transform: scale(1); /* Scale the background to full size */
+}
+
+.log_signbtn button:hover {
+  color: #fff; /* Text color change on hover */
+}
+/* comon_allbtns animation */
+.log_book hr {
+  opacity: 0.25;
+  background: var(--Blackish-Green, #121);
+  margin: 40px 0;
+}
+.or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.or p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(17, 34, 17, 50%);
+  margin: -80px 0 0 0 !important;
+  background-color: #fafbfc;
+  padding: 0 16px;
+  z-index: 2;
+}
+
+.sign_btns {
+  display: flex;
+  gap: 16px;
+}
+
+/* .heartbtn:hover{
+  background-color: #8DD3BB;
+} */
+
+.heartbtn {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 100%;
+  height: 56px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+  transition: 0.4s;
+}
+.heartbtn img {
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+}
+
+/* ----------------------------------------- */
+
+.airline_check {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.airline_checkinput {
+}
+.airline_checklabel {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+}
+.airline_check input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  accent-color: #262626; /* Custom color */
+  cursor: pointer;
+  border: 2px solid #112211;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  display: block !important;
+}
+
+.airline_check input[type="checkbox"]:checked {
+  background-color: #8dd3bb;
+  background-image: url("../image/secondchekmark.png"); /* Your custom checkmark image */
+  background-size: 10px 10px; /* Ensures the image fits the checkbox */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.airline_check input[type="checkbox"]::before {
+  content: ""; /* Checkmark symbol */
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide by default */
+}
+/* Show tick mark when checked */
+.airline_check input[type="checkbox"]:checked::before {
+  display: block;
+}
+
+.login_img {
+  display: flex;
+  justify-content: flex-start;
+}
+.login_img img {
+  width: 100%;
+}
+
+.top_logo {
+  margin-bottom: 64px;
+}
+.check_flex p {
+  color: var(--Slamon, #ff8682);
+  text-align: right;
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.dont {
+  color: var(--Blackish-Green, #121);
+  text-align: center;
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.first_pos {
+  position: relative;
+}
+.e_pos {
+  position: absolute;
+  top: -6px;
+  left: 19px;
+  background-color: #fafbfc;
+  padding: 0 10px;
+  z-index: 10;
+  color: #1c1b1f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.log_second {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.e_pos {
+  position: absolute;
+  top: -6px;
+  left: 19px;
+  background-color: #fafbfc;
+  padding: 0 10px;
+  z-index: 10;
+  color: #1c1b1f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.password-input-wrapper {
+  position: relative; /* আইকনটিকে অ্যাবসোলিউটলি পজিশন করার জন্য */
+  width: 100%; /* ইনপুট ফিল্ডের পুরো প্রস্থ নেবে */
+}
+
+.log_sign {
+  padding-right: 30px; /* আইকনের জন্য ডানদিকে জায়গা তৈরি করুন */
+  width: 100%; /* আপনার প্রয়োজন অনুযায়ী */
+  /* অন্যান্য স্টাইল */
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777; /* আইকনের রঙ */
+  z-index: 11; /* .e_pos এর উপরে দেখানোর জন্য */
+}
+
+.two_flwx {
+  display: flex;
+  gap: 10px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .logi {
+    height: 35px !important;
+  }
+  /* comon btn */
+  .comonbtn {
+    height: 35px !important;
+  }
+
+  /* <!-- airbus start --> */
+
+  .airbus {
+    margin: 50px 0;
+  }
+
+  .airbus_content {
+    margin-bottom: 20px;
+  }
+
+  .heartbtn img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .log_signbtn button {
+    font-size: 14px !important;
+  }
+
+  .log_sign {
+    height: 48px;
+    font-size: 14px;
+  }
+  .log_sign::placeholder {
+    font-size: 14px;
+  }
+  .password-toggle {
+    width: 20px;
+    height: 20px;
+  }
+  .heartbtn img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .login_img img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .top_logo {
+    margin-bottom: 30px;
+  }
+
+  .log_book h2 {
+    font-size: 25px;
+    margin-bottom: 14px;
+  }
+  .log_book h3 {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .check_flex {
+    margin-bottom: 30px;
+  }
+
+  .log_book hr {
+    margin: 38px 0;
+  }
+
+  .air_dates {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .e_pos {
+    padding: 0 7px;
+    font-size: 12px;
+  }
+
+  .airline_checklabel {
+    font-size: 12px;
+  }
+  .airline_check {
+    gap: 8px;
+  }
+
+  .check_flex p {
+    font-size: 12px;
+    margin: 0 0 0 27px;
+  }
+  .check_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    align-content: flex-start;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logi {
+    height: 40px !important;
+  }
+  .othrer {
+    display: none;
+  }
+  /* comon btn */
+  .comonbtn {
+    height: 40px !important;
+  }
+
+  /* <!-- airbus start --> */
+  .airbus {
+    margin: 60px 0;
+  }
+
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 48px;
+    font-size: 14px;
+  }
+  .log_sign::placeholder {
+    font-size: 14px;
+  }
+  .password-toggle {
+    width: 20px;
+    height: 20px;
+  }
+  .heartbtn img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .login_img img {
+    width: 100%;
+  }
+
+  .top_logo {
+    margin-bottom: 30px;
+  }
+
+  .log_book h2 {
+    font-size: 25px;
+    margin-bottom: 14px;
+  }
+  .log_book h3 {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .check_flex {
+    margin-bottom: 30px;
+  }
+
+  .log_book hr {
+    margin: 38px 0;
+  }
+
+  .air_dates {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  .e_pos {
+    padding: 0 7px;
+    font-size: 12px;
+  }
+
+  .airline_checklabel {
+    font-size: 12px;
+  }
+  .airline_check {
+    gap: 8px;
+  }
+
+  .check_flex p {
+    font-size: 12px;
+    margin: 0 0 0 27px;
+  }
+  .check_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    align-content: flex-start;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .othrer {
+    display: none;
+  }
+  /* <!-- airbus start --> */
+  .airbus {
+    margin: 80px 0;
+  }
+
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 56px;
+  }
+  .login_img img {
+    width: 100%;
+  }
+
+  .top_logo {
+    margin-bottom: 30px;
+  }
+
+  .log_book h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+  .log_book h3 {
+    margin-bottom: 35px;
+  }
+  .check_flex {
+    margin-bottom: 30px;
+  }
+
+  .log_book hr {
+    margin: 38px 0;
+  }
+
+  .air_dates {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  .airline_checklabel {
+    font-size: 12px;
+  }
+  .airline_check {
+    gap: 8px;
+  }
+
+  .check_flex p {
+    font-size: 12px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .othrer {
+    display: none;
+  }
+  /* <!-- airbus start --> */
+  .airbus {
+    margin: 100px 0;
+  }
+
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 56px;
+  }
+  .login_img img {
+    width: 100%;
+  }
+
+  .top_logo {
+    margin-bottom: 30px;
+  }
+
+  .log_book h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+  .log_book h3 {
+    margin-bottom: 35px;
+  }
+  .check_flex {
+    margin-bottom: 30px;
+  }
+
+  .log_book hr {
+    margin: 38px 0;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .othrer {
+    display: none;
+  }
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 56px;
+  }
+
+  .login_img img {
+    width: 100%;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  /* <!-- airbus start --> */
+
+  .log_sign {
+    height: 56px;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  /* <!-- airbus start --> */
+  .log_sign {
+    height: 56px;
+  }
+}

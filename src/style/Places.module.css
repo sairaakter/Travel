@@ -1,0 +1,146 @@
+.cnogap {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.map_section {
+  margin-bottom: 80px;
+}
+/* places start */
+.places {
+  margin-bottom: 48px;
+}
+.top_place {
+}
+.places_wrapper {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 15%);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+}
+.places_img {
+}
+.places_img img {
+  height: 90px;
+  width: 90px;
+}
+.places_text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.places_text h2 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/16px */
+  font-family: "Montserrat", sans-serif;
+  opacity: 70%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.places_text p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .map_section {
+    margin-bottom: 60px;
+  }
+  /* places start */
+  .places {
+    margin-bottom: 40px;
+  }
+
+  .places_img img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .places_wrapper {
+    margin-bottom: 16px !important;
+  }
+
+  .top_place {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .map_section {
+    margin-bottom: 60px;
+  }
+  /* places start */
+
+  .places_img img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .places_wrapper {
+    margin-bottom: 24px !important;
+  }
+
+  .top_place {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .map_section {
+    margin-bottom: 65px;
+  }
+  /* places start */
+
+  .places_img img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .places_wrapper {
+    margin-bottom: 24px !important;
+  }
+
+  .top_place {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .map_section {
+    margin-bottom: 65px;
+  }
+  /* places start */
+
+  .places_img img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .places_wrapper {
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,359 @@
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+  --bs-navbar-toggler-focus-width: 0;
+}
+
+/* toggloar  */
+.nav_togle {
+  border: none !important;
+  padding: 0 !important;
+}
+.nav_togle a svg {
+  stroke: #121;
+  fill: transparent;
+}
+.custom_toggler_icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  box-shadow: none !important;
+}
+/* Hide initially */
+.nav .h_logos a::after {
+  transform: translateX(-50%) scaleX(0);
+  opacity: 0;
+}
+
+/* On hover or active only, show animation */
+.h_logos a:hover::after,
+.h_logos a.active::after {
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mainlogo {
+  display: none;
+}
+.secondt_li {
+  display: none;
+}
+.navbarr {
+  padding: 24px 0;
+  margin-top: -30px;
+}
+.h_logos {
+  display: flex;
+  gap: 32px;
+}
+.h_logos a {
+  display: inline;
+}
+.nav {
+}
+.nav ul {
+}
+.nav ul li a {
+  padding: 0 !important;
+  margin-left: -61px;
+}
+
+/* ata ekside theke undersine start korche  */
+/* .h_logos a {
+    position: relative;
+    display: inline-block; 
+    padding-bottom: 24px; 
+  }
+  
+  .h_logos a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+    
+  }
+  
+  .h_logos a:hover::after,
+  .h_logos a.active::after {
+    width: 100%;
+  } */
+
+/* ata middle theke undersine start korche  */
+.h_logos a {
+  position: relative;
+  display: inline-block;
+}
+
+.h_logos a::after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  left: 50%; /* Start from center */
+  transform: translateX(-50%) scaleX(0); /* shrink from center */
+  transform-origin: center;
+  width: 100%;
+  height: 5px;
+  background-color: #8dd3bb;
+  transition: transform 0.3s ease;
+}
+
+.h_logos a:hover::after,
+.h_logos a.active::after {
+  transform: translateX(-50%) scaleX(1); /* expand to full width */
+}
+
+.h_buttons {
+  display: flex;
+  gap: 8px;
+}
+.h_buttons button {
+  background-color: #121;
+  border: none !important;
+  border-radius: 8px !important;
+  color: #fff;
+}
+.login {
+  color: var(--Neutrals, #121) !important;
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: transparent !important;
+  padding: 0px 24px;
+  height: 48px;
+}
+.login:hover {
+  color: #fff !important;
+}
+/* .login:active{
+    background-color:#fff !important;
+    color: var(--Blackish-Green, #121);
+    transition: all 0.3s ease-in-out;
+  
+  } */
+.signup {
+  text-align: center;
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0px 24px;
+  height: 48px;
+}
+
+/* comon_allbtns animation */
+
+.comon_allbtns button {
+  position: relative;
+  overflow: hidden; /* Hide overflow animation */
+  z-index: 1;
+}
+.comon_allbtns button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0); /* Hide the background initially */
+  background: linear-gradient(0deg, #112211 0%, #112211 100%);
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for scale and opacity */
+  z-index: -1;
+  border-radius: 6px !important;
+}
+
+/* Hover Effect */
+.comon_allbtns button:hover::after {
+  transform: scale(1); /* Scale the background to full size */
+}
+
+.comon_allbtns button:hover {
+  color: #fff; /* Text color change on hover */
+}
+/* comon_allbtns animation */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* header start */
+  .mainlogo {
+    display: block;
+  }
+  .md_logos {
+    display: none;
+  }
+  .first_li {
+    display: none;
+  }
+  .secondt_li {
+    display: flex;
+  }
+
+  .h_buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .nav {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+  .secondt_li {
+    display: flex;
+    gap: 25px;
+  }
+  .nav ul {
+    margin: 0 !important;
+  }
+  .h_logos a::after {
+    bottom: -8px;
+    height: 4px;
+  }
+  .navbar {
+    padding: 19px 0px;
+  }
+
+  .h_banner h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+    width: 230px;
+    margin-top: 40px;
+  }
+  .h_banner p {
+    font-size: 14px;
+    padding-bottom: 79px;
+  }
+  .h_wrapper {
+    background-position: center;
+  }
+  .signup {
+    padding: 0px 20px;
+    height: 40px;
+  }
+  .login {
+    padding: 0px 20px;
+    height: 40px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-sm,
+  .container {
+    max-width: 568px;
+  }
+  /* header start */
+  .mainlogo {
+    display: block;
+  }
+  .md_logos {
+    display: none;
+  }
+  .first_li {
+    display: none;
+  }
+  .secondt_li {
+    display: flex;
+  }
+
+  .h_buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .nav {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+  .secondt_li {
+    display: flex;
+    gap: 35px;
+  }
+  .nav ul {
+    margin: 0 !important;
+  }
+  .h_logos a::after {
+    bottom: -13px;
+    height: 4px;
+  }
+  .navbar {
+    padding: 19px 0;
+  }
+  .h_banner h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    width: 299px;
+    margin-top: 42px;
+  }
+  .h_banner p {
+    font-size: 14px;
+    padding-bottom: 92px;
+  }
+  .h_wrapper {
+    background-position: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* header start */
+  .mainlogo {
+    display: block;
+  }
+  .md_logos {
+    display: none;
+  }
+  .first_li {
+    display: none;
+  }
+  .secondt_li {
+    display: flex;
+  }
+
+  .h_buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .nav {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+  .secondt_li {
+    display: flex;
+    gap: 35px;
+  }
+  .nav ul {
+    margin: 0 !important;
+  }
+  .h_logos a::after {
+    bottom: -13px;
+    height: 4px;
+  }
+  .navbarr {
+    padding: 19px 0;
+  }
+  .h_banner h1 {
+    font-size: 34px;
+    margin-bottom: 6px;
+    margin-top: 60px;
+  }
+}

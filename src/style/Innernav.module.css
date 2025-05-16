@@ -1,0 +1,68 @@
+/* <!-- custonav start --> */
+/* .inner_nav {
+  margin: 48px 0 32px 0;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+.breadcrumb li a {
+  color: var(--Slamon, #ff8682);
+
+  /* Montserrat/Medium/14px */
+/* font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+} */
+
+/* ///////////////////////////////////////////////////////////////// */
+
+.breadcrumb {
+  display: flex;
+  margin: 60px 0;
+  padding: 0 !important;
+  cursor: pointer;
+}
+.breadcrumb li {
+  list-style-type: none;
+}
+
+.breadcrumb li a {
+  color: var(--Slamon, #ff8682);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+.breadcrumb li a {
+  color: var(--Slamon, #ff8682);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+.breadcrumbItemActive {
+  color: #000 !important;
+}
+.breadcrumbItem {
+  font-size: 14px; /* Default font size */
+  color: #6c757d; /* Default color */
+  text-decoration: none; /* Default decoration */
+}
+.breadcrumbItem::after {
+  content: "/";
+  color: #000000 !important;
+  opacity: 50%;
+  margin-right: 8px;
+  /* Separator color */
+}
+
+.breadcrumbItem:last-child::after {
+  content: ""; /* Remove the separator for the last item */
+}

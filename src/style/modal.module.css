@@ -1,0 +1,751 @@
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal_content {
+  background: white;
+  padding: 64px;
+  border-radius: 10px;
+  width: 640px;
+}
+.modal_content h2 {
+  color: #000;
+
+  /* TradeGothic/Bold/40px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+
+.mybtn {
+  background-color: #8dd3bb !important;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Hover animation with image and text */
+.c_anim_btn {
+  height: 48px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.canim_btn {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.canim_btn span {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c_anim_btn:hover .canim_btn {
+  transform: translateY(-48px);
+}
+
+.margtopinput {
+  margin-top: 27px;
+}
+
+/* //////////////////////////////////// */
+
+.defaltstyl {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  right: 0;
+  left: 94%;
+}
+.modal_flex {
+  display: flex;
+  gap: 24px;
+}
+
+/* promo code start */
+.promo_code {
+  position: relative;
+  top: -105px;
+}
+.promo_code_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.pro_inner {
+  width: 1532px;
+  background-color: #ffffff;
+  padding: 10px 32px 32px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 15%);
+}
+.p_bdr {
+}
+.promo_btn {
+  margin-bottom: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.promo_btn a {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+.promo_btn .animation {
+  position: absolute;
+  height: 5px;
+  bottom: -24px;
+  z-index: 0;
+  background-color: #8dd3bb;
+  width: 100px;
+  transition: all 0.5s ease 0s;
+}
+.promo_btn a:nth-child(1) {
+  width: 100px !important;
+}
+.promo_btn .start_hom,
+a:nth-child(1):active ~ .animation,
+.promo_btn .start_hom,
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+}
+.promo_btn a:nth-child(3) {
+  width: 100px !important;
+}
+.promo_btn .start_contact,
+a:nth-child(3):active ~ .animation .promo_btn .start_contact,
+a:nth-child(3):hover ~ .animation {
+  width: 110px;
+  left: 160px;
+}
+
+.fjfdjs {
+  width: 1px !important;
+  height: 48px;
+  background-color: #d7e2ee;
+  display: inline-block;
+  margin: 0 32px;
+}
+
+.pflight_btn {
+  background-color: transparent;
+  border: none;
+}
+.promo_form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trip_select {
+  border: none;
+  outline: none;
+}
+.select_wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.select_wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+}
+.select_wrapper .custom_arrow {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.fir_fild {
+}
+/* akhane bootsrtap er karone fieldset er default border ta show kora hoyeche  */
+.promo_form fieldset {
+  width: 100%;
+  border: 1px solid #79747e !important; /* হালকা ধূসর রঙের বর্ডার */
+  padding: 10px 16px !important; /* ভেতরের কনটেন্টের চারপাশে জায়গা */
+  border-radius: 5px !important;
+  position: relative !important; /* লিজেন্ডের পজিশনিং এর জন্য */
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo_form legend {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Regular/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: auto !important; /* লিজেন্ডের প্রস্থ কনটেন্টের সাথে মানানসই */
+  background-color: white !important; /* লিজেন্ডের ব্যাকগ্রাউন্ড সাদা করে বর্ডারের উপর দেখাতে */
+  padding: 0 5px !important; /* লিজেন্ডের চারপাশে প্যাডিং */
+  font-size: 0.9em !important;
+  color: #555 !important;
+  position: absolute !important; /* বর্ডারের উপর পজিশন করার জন্য */
+  top: -0.6em !important; /* বর্ডারের উপরে ওঠানোর জন্য */
+  left: 10px !important; /* বাম দিক থেকে সামান্য সরানো */
+}
+.From_to {
+  color: #1c1b1f;
+  /* Montserrat/Regular/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+  margin: 11px 0px;
+  width: 100%;
+}
+.From_to::placeholder {
+  color: #1c1b1f;
+  /* Montserrat/Regular/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+}
+.From_to:focus-visible {
+  border: none !important;
+  outline: none !important;
+}
+.send_btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 0; */
+}
+.promo_form select {
+  appearance: none; /* ডিফল্ট অ্যারো লুকানোর জন্য */
+  -webkit-appearance: none; /* সাফারি এবং ক্রোম এর জন্য */
+}
+.custom_arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #555; /* আইকনের রঙ */
+}
+
+.custom_arrow svg {
+  width: 20px;
+  height: 20px;
+}
+input[type="date"] {
+  appearance: none !important; /* ডিফল্ট অ্যারো লুকানোর জন্য */
+  -webkit-appearance: none !important; /* সাফারি এবং ক্রোম এর জন্য */
+  /* অন্যান্য স্টাইল */
+  cursor: pointer;
+}
+
+/* comonbtn start */
+.comonbtn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 16px;
+  border: none;
+  background-color: transparent;
+}
+/* comonbtn end */
+
+.add_btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  gap: 18px;
+  margin-top: 32px;
+}
+.add_btns button {
+  border-radius: 4px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+.remove_btn {
+  background-color: #8dd3bb !important;
+}
+
+/* comon_allbtns animation */
+
+.add_btns button {
+  position: relative;
+  overflow: hidden; /* Hide overflow animation */
+  z-index: 1;
+}
+.add_btns button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0); /* Hide the background initially */
+  background: linear-gradient(0deg, #8dd3bb 0%, #8dd3bb 100%);
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for scale and opacity */
+  z-index: -1;
+  border-radius: 4px !important;
+}
+
+/* Hover Effect */
+.add_btns button:hover::after {
+  transform: scale(1); /* Scale the background to full size */
+}
+
+.add_btns button:hover {
+  color: #112211; /* Text color change on hover */
+}
+/* comon_allbtns animation */
+.your-element {
+  /* আপনার এলিমেন্টের ক্লাস বা আইডি */
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .modal_content {
+    background: white;
+    padding: 19px;
+    border-radius: 10px;
+    width: 88%;
+  }
+  .modal_content h2 {
+    margin-bottom: 21px;
+    font-size: 24px;
+  }
+  .promo_form {
+    gap: 14px;
+  }
+  .modal_flex {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .c_anim_btn {
+    height: 35px !important;
+  }
+  .canim_btn span {
+    height: 35px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-35px);
+  }
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 267px;
+    padding: 10px 18px 18px;
+  }
+
+  .promo_form fieldset {
+    padding: 10px 10px !important;
+    width: 100%;
+  }
+  .From_to {
+    width: 146px;
+  }
+  .add_btns {
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .promo_btn .animation {
+    height: 4px;
+    bottom: -15px;
+  }
+  .promo_btn {
+    margin-bottom: 46px;
+  }
+  .fjfdjs {
+    height: 34px;
+    margin: 0 18px;
+  }
+
+  .promo_code {
+    top: -65px;
+  }
+  .promo_btn a img {
+    width: 75px;
+  }
+  .promo_btn .start_contact,
+  a:nth-child(3):active ~ .animation .promo_btn .start_contact,
+  a:nth-child(3):hover ~ .animation {
+    width: 100px;
+    left: 138px;
+  }
+  .promo_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .cus_width {
+    width: 100% !important;
+  }
+
+  .promo_btn .start_hom,
+  a:nth-child(1):active ~ .animation,
+  .promo_btn .start_hom,
+  a:nth-child(1):hover ~ .animation {
+    width: 93px;
+    left: 7px;
+  }
+  .add_btns button {
+    width: 100%;
+    justify-content: center;
+  }
+  .add_btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    gap: 18px;
+    margin-top: 32px;
+    flex-direction: column;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .modal_content {
+    background: white;
+    padding: 19px;
+    border-radius: 10px;
+    width: 396px;
+  }
+  .modal_content h2 {
+    margin-bottom: 21px;
+    font-size: 24px;
+  }
+  .promo_form {
+    gap: 14px;
+  }
+  .modal_flex {
+    gap: 14px;
+  }
+  .canim_btn {
+  }
+  .canim_btn span {
+    height: 40px !important;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-40px) !important;
+  }
+  .c_anim_btn {
+    margin-top: 24px;
+    height: 40px !important;
+  }
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 421px;
+    padding: 10px 18px 18px;
+  }
+
+  .promo_form fieldset {
+    padding: 10px 10px !important;
+    width: 100%;
+  }
+  .From_to {
+    width: 146px;
+  }
+  .add_btns {
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .promo_btn .animation {
+    height: 4px;
+    bottom: -15px;
+  }
+  .promo_btn {
+    margin-bottom: 46px;
+  }
+  .fjfdjs {
+    height: 34px;
+    margin: 0 18px;
+  }
+
+  .promo_code {
+    top: -87px;
+  }
+  .promo_btn a img {
+    width: 75px;
+  }
+  .promo_btn .start_contact,
+  a:nth-child(3):active ~ .animation .promo_btn .start_contact,
+  a:nth-child(3):hover ~ .animation {
+    width: 110px;
+    left: 135px;
+  }
+  .promo_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .cus_width {
+    width: 100% !important;
+  }
+  .comonbtn {
+    height: 40px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .modal_content {
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    width: 449px;
+  }
+  .modal_content h2 {
+    margin-bottom: 35px;
+    font-size: 32px;
+  }
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 576px;
+    padding: 10px 18px 18px;
+  }
+
+  .promo_form fieldset {
+    padding: 10px 10px !important;
+    width: 100%;
+  }
+  .From_to {
+    width: 146px;
+  }
+  .add_btns {
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .promo_btn .animation {
+    height: 4px;
+    bottom: -15px;
+  }
+  .promo_btn {
+    margin-bottom: 46px;
+  }
+  .fjfdjs {
+    height: 34px;
+    margin: 0 18px;
+  }
+
+  .promo_code {
+    top: -67px;
+  }
+  .promo_btn a img {
+    width: 75px;
+  }
+  .promo_btn .start_contact,
+  a:nth-child(3):active ~ .animation .promo_btn .start_contact,
+  a:nth-child(3):hover ~ .animation {
+    width: 110px;
+    left: 137px;
+  }
+  .promo_form {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .modal_content {
+    background: white;
+    padding: 42px;
+    border-radius: 10px;
+    width: 534px;
+  }
+  .modal_content h2 {
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 827px;
+    padding: 10px 26px 26px;
+  }
+
+  .promo_form fieldset {
+    padding: 10px 10px !important;
+    width: 100%;
+  }
+  .From_to {
+    width: 146px;
+  }
+  .add_btns {
+    gap: 16px;
+    margin-top: 26px;
+  }
+  .promo_btn .animation {
+    bottom: -15px;
+  }
+  .promo_btn {
+    margin-bottom: 46px;
+  }
+  .fjfdjs {
+    height: 38px;
+    margin: 0 25px;
+  }
+
+  .promo_code {
+    top: -76px;
+  }
+
+  .promo_btn .start_contact,
+  a:nth-child(3):active ~ .animation .promo_btn .start_contact,
+  a:nth-child(3):hover ~ .animation {
+    width: 110px;
+    left: 147px;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 982px;
+  }
+
+  .promo_form fieldset {
+    padding: 10px 12px !important;
+    width: 100%;
+  }
+  .From_to {
+    width: 181px;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 1159px;
+  }
+
+  .promo_form fieldset {
+    width: 100%;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 1209px;
+  }
+
+  .promo_form fieldset {
+    width: 100%;
+  }
+}
+@media (min-width: 1701px) and (max-width: 1800px) {
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 1334px;
+  }
+
+  .promo_form fieldset {
+    width: 100%;
+  }
+}
+@media (min-width: 1801px) and (max-width: 1850px) {
+  /* <!-- promo code start --> */
+
+  .pro_inner {
+    width: 1398px;
+  }
+
+  .promo_form fieldset {
+    width: 100%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+  /* <!-- promo code start --> */
+  .pro_inner {
+    width: 327px;
+  }
+  .modal_flex {
+    flex-direction: row !important;
+    gap: 14px;
+    width: 100%;
+  }
+  .From_to {
+    width: 100%;
+  }
+}
+@media (min-width: 450px) and (max-width: 500px) {
+  /* <!-- promo code start --> */
+  .pro_inner {
+    width: 369px;
+  }
+  .modal_flex {
+    flex-direction: row !important;
+    gap: 14px;
+  }
+  .From_to {
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 575px) {
+  /* <!-- promo code start --> */
+  .modal_flex {
+    flex-direction: row !important;
+    gap: 14px;
+  }
+  .pro_inner {
+    width: 388px;
+  }
+  .From_to {
+    width: 100%;
+  }
+}

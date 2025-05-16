@@ -1,0 +1,848 @@
+/* <!-- airbus start */
+
+.airbus {
+  margin-bottom: 120px;
+}
+
+.airbus_content {
+}
+
+.top_air {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 32px;
+}
+
+.air_left {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+.air_left h1 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/24px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 8px 0;
+}
+.air_left p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  align-content: center;
+}
+.views_options p {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.views_options button {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 40px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+}
+
+.air_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.air_right h2 {
+  color: var(--Slamon, #ff8682);
+
+  /* Montserrat/Bold/32px */
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.air_botn {
+  display: flex;
+  gap: 15px;
+}
+
+.heartbtn:hover {
+  background-color: #8dd3bb;
+}
+
+.heartbtn {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/12px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  padding: 0 !important;
+  transition: 0.4s;
+}
+.heartbtn img {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+}
+
+.mybtn {
+  background-color: #8dd3bb !important;
+  border-radius: 4px;
+}
+
+/* Hover animation with image and text */
+.c_anim_btn {
+  height: 48px;
+  width: 150px;
+  overflow: hidden;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.canim_btn {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.canim_btn span {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c_anim_btn:hover .canim_btn {
+  transform: translateY(-48px);
+}
+
+/* <!-- airbus start --> */
+
+.img_emirates img {
+  width: 100%;
+}
+
+.airbus_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 40px 0 24px 0;
+}
+.airbus_text h3 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/24px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+.airline_options {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  align-content: center;
+}
+.airline_check {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.airline_checkinput {
+}
+.airline_checklabel {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+}
+.airline_check input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  accent-color: #262626; /* Custom color */
+  cursor: pointer;
+  border: 2px solid #112211;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  display: block !important;
+}
+
+.airline_check input[type="checkbox"]:checked {
+  background-color: #8dd3bb;
+  background-image: url("../assets/secondchekmark.png"); /* Your custom checkmark image */
+  background-size: 10px 10px; /* Ensures the image fits the checkbox */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.airline_check input[type="checkbox"]::before {
+  content: ""; /* Checkmark symbol */
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide by default */
+}
+/* Show tick mark when checked */
+.airline_check input[type="checkbox"]:checked::before {
+  display: block;
+}
+
+.img_galary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.img_galary img {
+  width: 120px;
+  height: 120px;
+}
+
+.air_policies {
+  background-color: #8dd3bb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.air_policies h4 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/24px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.policy_contnt {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+  align-content: center;
+}
+.policy_contnt p {
+  color: var(--Blackish-Green, #121);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  align-content: center;
+  align-items: center;
+}
+.policy_contnt p span {
+  opacity: 75%;
+}
+
+.air_dates {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.sub_date {
+  background-color: #fff !important;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 15%);
+  padding: 32px 24px;
+}
+
+.top_dat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.top_dat h5 {
+  color: var(--Blackish-Green, #121);
+
+  /* TradeGothic/Bold/20px */
+  font-family: "TradeGothic LT Extended", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.top_dat p {
+  color: var(--Blackish-Green, #121);
+  opacity: 75%;
+  /* Montserrat/Medium/20px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.middle_dat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 24px 0 40px 0;
+}
+.midle_left {
+  display: flex;
+  border: 1px solid #8dd3bb;
+  border-radius: 8px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 24px;
+  width: 250px;
+}
+
+.midle_left img {
+}
+
+.midle_contnt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.midle_contnt h6 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.midle_contnt p {
+  color: var(--Blackish-Green, #121);
+  opacity: 60%;
+  /* Montserrat/Medium/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.midle_right {
+}
+.airpromo_icon {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.airpromo_icon a img {
+}
+.fjfdjs {
+  width: 1px !important;
+  height: 48px;
+  background-color: #d7e2ee;
+  display: inline-block;
+  margin: 0 24px;
+}
+
+.bottom_dat {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.fromm {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  align-content: center;
+}
+.fromm h2 {
+  color: var(--Blackish-Green, #121);
+
+  /* Montserrat/Semibold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.fromm p {
+  color: var(--Blackish-Green, #121);
+  opacity: 60%;
+  /* Montserrat/Medium/16px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.bot_mdicon {
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .c_anim_btn {
+    height: 35px !important;
+  }
+  .canim_btn span {
+    height: 35px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-35px);
+  }
+
+  /* <!-- airbus start --> */
+  .img_galary {
+    margin-bottom: 0;
+  }
+
+  .img_galary img {
+    display: none;
+    width: 44px;
+    height: 44px;
+  }
+  .airbus {
+    margin-bottom: 50px;
+  }
+
+  .top_air {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .airbus_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 20px 0 20px 0;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .policy_contnt p {
+    gap: 10px;
+  }
+  .policy_contnt {
+    gap: 10px;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  .air_policies {
+    margin-bottom: 30px;
+  }
+
+  .middle_dat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    margin: 20px 0 24px 0;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .fromm h2 {
+    font-size: 16px;
+  }
+  .fromm p {
+    font-size: 11px;
+  }
+  .fromm {
+    gap: 10px;
+  }
+
+  .bottom_dat {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .fjfdjs {
+    height: 40px;
+
+    margin: 0 16px;
+  }
+
+  .air_dates {
+    gap: 24px;
+  }
+
+  .heartbtn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .air_left h1 {
+    font-size: 20px;
+    margin: 0 0 0px 0;
+  }
+  .air_left p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .airbus_text h3 {
+    font-size: 20px;
+  }
+
+  .airline_check {
+    gap: 5px;
+  }
+  .airline_options {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    gap: 11px;
+  }
+  .air_policies h4 {
+    font-size: 20px;
+  }
+  .policy_contnt p {
+    font-size: 14px;
+  }
+
+  .top_dat h5 {
+    font-size: 16px;
+  }
+  .top_dat p {
+    font-size: 16px;
+  }
+
+  .midle_left {
+    gap: 16px;
+    padding: 9px 16px;
+    width: 179px;
+  }
+
+  .midle_contnt h6 {
+    font-size: 16px;
+  }
+  .midle_contnt p {
+    font-size: 12px;
+  }
+
+  .sub_date {
+    padding: 20px 12px;
+  }
+
+  .air_right {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .canim_btn span {
+    height: 40px;
+  }
+  .c_anim_btn:hover .canim_btn {
+    transform: translateY(-40px);
+  }
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 44px;
+    height: 44px;
+  }
+  .airbus {
+    margin-bottom: 60px;
+  }
+  .top_air {
+    margin-bottom: 24px;
+    align-items: flex-end;
+    align-content: center;
+  }
+
+  .airbus_text {
+    margin: 30px 0 20px 0;
+  }
+  .img_galary {
+    margin-bottom: 30px;
+  }
+  .policy_contnt p {
+    gap: 10px;
+  }
+  .policy_contnt {
+    gap: 10px;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  .air_policies {
+    margin-bottom: 30px;
+  }
+  .middle_dat {
+    margin: 16px 0 24px 0;
+  }
+
+  .fromm h2 {
+    font-size: 16px;
+  }
+  .fromm p {
+    font-size: 11px;
+  }
+  .fromm {
+    gap: 10px;
+  }
+  .bottom_dat {
+    gap: 20px;
+  }
+  .fjfdjs {
+    height: 40px;
+
+    margin: 0 16px;
+  }
+
+  .air_dates {
+    gap: 30px;
+  }
+
+  .heartbtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .air_left h1 {
+    font-size: 20px;
+    margin: 0 0 0px 0;
+  }
+  .air_left p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .airbus_text h3 {
+    font-size: 20px;
+  }
+
+  .airline_check {
+    gap: 5px;
+  }
+  .airline_options {
+    gap: 11px;
+  }
+  .air_policies h4 {
+    font-size: 20px;
+  }
+  .policy_contnt p {
+    font-size: 14px;
+  }
+
+  .top_dat h5 {
+    font-size: 16px;
+  }
+  .top_dat p {
+    font-size: 16px;
+  }
+
+  .midle_left {
+    gap: 16px;
+    padding: 9px 16px;
+    width: 179px;
+  }
+
+  .midle_contnt h6 {
+    font-size: 16px;
+  }
+  .midle_contnt p {
+    font-size: 12px;
+  }
+
+  .sub_date {
+    padding: 20px 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 58px;
+    height: 58px;
+  }
+  .airbus {
+    margin-bottom: 80px;
+  }
+  .top_air {
+    margin-bottom: 24px;
+  }
+
+  .airbus_text {
+    margin: 30px 0 20px 0;
+  }
+  .img_galary {
+    margin-bottom: 30px;
+  }
+  .policy_contnt p {
+    gap: 10px;
+  }
+  .policy_contnt {
+    gap: 10px;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  .air_policies {
+    margin-bottom: 30px;
+  }
+  .middle_dat {
+    margin: 20px 0 30px 0;
+  }
+  .fromm h2 {
+    font-size: 20px;
+  }
+  .fromm {
+    gap: 10px;
+  }
+  .bottom_dat {
+    gap: 35px;
+  }
+  .fjfdjs {
+    height: 40px;
+
+    margin: 0 20px;
+  }
+
+  .air_dates {
+    gap: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 75px;
+    height: 75px;
+  }
+  .airbus {
+    margin-bottom: 100px;
+  }
+}
+/* Extra large devices ( extra large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+/* //agulo custom container er jonno */
+/* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1550px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 1551px) and (max-width: 1700px) {
+  /* <!-- airbus start --> */
+  .img_galary img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 400px) and (max-width: 575px) {
+  .airline_options {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    gap: 11px;
+  }
+}

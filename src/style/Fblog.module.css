@@ -1,0 +1,267 @@
+/* <!-- blog start ------------> */
+
+.blog {
+  margin-bottom: 80px;
+}
+
+.blog_wrapper {
+  position: relative;
+  width: 100%;
+}
+.blog_img {
+  width: 100%;
+  padding: 0 6px;
+}
+.blog_img img {
+  width: 100%;
+}
+.blog_contents {
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+.blog_text {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.blog_text h2 {
+  color: var(--Neutrals, #fff);
+
+  /* Montserrat/Semibold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+.blog_text p {
+  color: var(--Neutrals, #fff);
+
+  /* Montserrat/Regular/14px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.blog_text h5 {
+  color: var(--Neutrals, #fff);
+
+  /* Montserrat/Semibold/24px */
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+/* comonbtn start */
+.comonbtn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 16px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.blog_btns button {
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+/* Hover animation with image and text */
+.canim_btn {
+  height: 48px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.anim_btn {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.anim_btn span {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.canim_btn:hover .anim_btn {
+  transform: translateY(-48px);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* bog start */
+  .blog {
+    margin-bottom: 60px;
+  }
+
+  .bfor_sm {
+  }
+  .blog_contents {
+  }
+
+  .blog_text h2 {
+  }
+
+  .blog_text p {
+  }
+
+  .blog_text {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+  .blog_contents {
+    padding: 0px 14px;
+    bottom: 14px;
+    gap: 14px;
+  }
+
+  .blog_text h2 {
+    font-size: 18px;
+  }
+  .blog_text h5 {
+    font-size: 18px;
+  }
+  /* comon btn */
+  .comonbtn {
+    height: 35px;
+  }
+  .canim_btn {
+    height: 35px;
+  }
+
+  .anim_btn span {
+    height: 35px;
+  }
+  .canim_btn:hover .anim_btn {
+    transform: translateY(-35px);
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* bog start */
+  .blog {
+    margin-bottom: 60px;
+  }
+
+  .bfor_sm {
+  }
+  .blog_contents {
+  }
+
+  .blog_text h2 {
+  }
+
+  .blog_text p {
+  }
+  .blog_text {
+  }
+
+  .blog_text {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    align-content: center;
+  }
+
+  /* comon btn */
+  .comonbtn {
+    height: 40px;
+  }
+  .canim_btn {
+    height: 40px;
+  }
+
+  .anim_btn span {
+    height: 40px;
+  }
+  .canim_btn:hover .anim_btn {
+    transform: translateY(-40px);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* bog start */
+  .blog {
+    margin-bottom: 65px;
+  }
+
+  .blog_contents {
+  }
+  .blog_text h2 {
+  }
+
+  .blog_text p {
+  }
+  .blog_text {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* bog start */
+  .blog {
+    margin-bottom: 65px;
+  }
+  .blog_contents {
+  }
+  .blog_text h2 {
+  }
+
+  .blog_text p {
+  }
+
+  .blog_text {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 575px) {
+  /* blog start */
+
+  .blog_text {
+    display: flex;
+    gap: 8px;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+  }
+}
